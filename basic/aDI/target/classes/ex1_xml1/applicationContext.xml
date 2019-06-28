@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!-- 기본 scope singleton!, 읽는 순간 객체 생성  -->
+<bean id='ko' class="ex1_xml1.MessageBeanKoImpl" scope='singleton'></bean>
+<!-- scope prototype, getbean 시 객체 생성  -->
+<bean id='en' class="ex1_xml1.MessageBeanEnImpl" scope='prototype'></bean>
+
+</beans>

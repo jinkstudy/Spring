@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id='mem1' class='ex1_xml3_pvalue.MemberBean'
+ p:name="홍길동" p:age='33' p:message="점심뭐?"></bean>
+<bean id='dao1' class='ex1_xml3_pvalue.MemberDAO'
+	p:member-ref="mem1"/>
+	
+<bean id='mem2' class='ex1_xml3_pvalue.MemberBean'
+ p:name="홍길홍" p:age='32' p:message="점심뭐???"></bean>
+<bean id='dao2' class='ex1_xml3_pvalue.MemberDAO'
+	p:member-ref="mem2"/>
+
+</beans>
