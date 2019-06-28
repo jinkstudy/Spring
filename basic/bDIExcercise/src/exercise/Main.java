@@ -15,7 +15,8 @@ public class Main {
 		Customer customer = (Customer)ctx.getBean("customer");
 	
 		
-		CustomerService customerService = (CustomerService)ctx.getBean("customerService");
+//		CustomerService customerService = (CustomerService)ctx.getBean("customerService");
+		CustomerService customerService = (CustomerService)ctx.getBean("customerServiceImpl");
 		customerService.saveCustomer(customer);
 		customerService.deleteCustomer(1);		
 		

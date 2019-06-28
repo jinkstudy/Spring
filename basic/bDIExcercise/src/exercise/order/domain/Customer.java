@@ -1,5 +1,8 @@
 package exercise.order.domain;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Customer {
 	private long id;
 	private String name;
