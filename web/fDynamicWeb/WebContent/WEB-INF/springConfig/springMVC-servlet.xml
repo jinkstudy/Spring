@@ -10,6 +10,9 @@
 
 <!-- 자동 빈 생성 -->
 <context:component-scan base-package="example.member"/>
+<!-- <bean class="example.member.controller.AutoScanController"/> -->
+<!-- <bean class="example.member.controller.RequestMappingController"/> -->
+
 
 <bean id='memberVO' class="example.member.model.MemberVO">
 <property name="id" value="001"/>
